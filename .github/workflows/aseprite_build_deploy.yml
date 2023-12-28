@@ -1,4 +1,4 @@
-name: Build and deploy Aseprite please
+name: Build and deploy Aseprite
 
 on:
   schedule:
@@ -6,6 +6,7 @@ on:
   push:
 env:
   BUILD_TYPE: Release
+  ACTIONS_ALLOW_UNSECURE_COMMANDS: true 
   
 jobs:
   check-version:
